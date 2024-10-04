@@ -15,7 +15,9 @@ function App() {
       .catch((error) => console.error(error));
     return () => setLoading(false);
   }, []);
+
   console.log(loading);
+
   if (loading) {
     return (
       <div className="h-screen w-full overflow-y-auto bg-[#121212] text-white">
